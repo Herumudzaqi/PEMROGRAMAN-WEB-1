@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Muhammadiyah Kramat</title>
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan dengan CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>SMK Muhammadiyah Kramat</h1>
+        <img src="smk.png" alt="Logo SMK Muhammadiyah Kramat" width="100">
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showContent('home')">Home</a></li>
+            <li><a href="#" onclick="showContent('content')">Content</a></li>
+            <li><a href="#" onclick="showContent('about')">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Konten -->
+    <main id="main-content">
+        <!-- Home Section -->
+        <section id="home" class="content-section">
+            <h2>Informasi Terkini</h2>
+            <p>SMK Muhammadiyah Kramat sekolah kejuruan swasta yang telah berdiri sejak 1997 dan berlokasi di Jl. Garuda, Kemantran, Kecamatan Kramat, Tegal. Sekolah ini menyediakan beberapa program keahlian, termasuk Teknik Kendaraan Ringan Otomotif (TKRO), Teknik Audio Video (TAV), Teknik Bisnis Sepeda Motor (TBSM), Teknik Pemesinan (TPM), dan Multimedia (MM). Dengan jumlah siswa mencapai sekitar 1.300 orang, sekolah ini berkomitmen untuk menghasilkan lulusan yang kompeten di dunia kerja dan memiliki karakter islami serta kedisiplinan yang kuat.</p>
+            
+            <h2 class="section-title">Visi Misi</h2>
+            <p class="section-content">Untuk menjadi institusi yang mandiri, berbasis prestasi, dan mengedepankan nilai akhlakul karimah serta peduli lingkungan.</p>
+        </section>
+
+        <!-- Content Section (Pendaftaran) -->
+        <section id="content" class="content-section" style="display: none;">
+            <h2>Pendaftaran SMK Muhammadiyah Kramat</h2>
+            <p>Untuk informasi lebih lanjut tentang pendaftaran, silakan isi form di bawah ini:</p>
+            <form id="registration-form" onsubmit="submitRegistrationForm(event)">
+                <label for="student-name">Nama Siswa:</label>
+                <input type="text" id="student-name" name="student-name" required>
+                
+                <label for="program">Program Keahlian:</label>
+                <select id="program" name="program" required>
+                    <option value="TKRO">Teknik Kendaraan Ringan Otomotif (TKRO)</option>
+                    <option value="ANIMASI">Animasi</option>
+                    <option value="ELEKTRONIKA">Teknik Elektronika</option>
+                    <option value="TPM">Teknik Pemesinan (TPM)</option>
+                    <option value="TBSM">Teknik Bisnis dan Sepeda Motor (TBSM)</option>
+                </select>
+                
+                <button type="submit">Daftar Sekarang</button>
+            </form>
+
+            <!-- Program Keahlian -->
+            <h2>Program Keahlian</h2>
+            <div class="program-card">
+                <img src="TKRO.jpeg" alt="Teknik Kendaraan Ringan Otomotif (TKRO)">
+                <h3>TEKNIK KENDARAAN RINGAN OTOMOTIF (TKRO)</h3>
+                <p>Memberikan siswa/siswi TKRO keterampilan yang ditunjang dengan pengakuan kompetensi melalui sertifikasi LSP P1 dan P3 yang diakui secara Nasional, sehingga mampu bersaing di industri.</p>
+            </div>
+
+            <!-- Card lainnya sama seperti di kode awal -->
+        </section>
+
+        <section id="about" class="content-section" style="display: none;">
+            <h2>Kontak Kami</h2>
+            <p>Untuk informasi lebih lanjut, Anda dapat menghubungi kami melalui:</p>
+            <ul>
+                <li><img src="Maps.png" alt="Alamat Icon" width="20"> Alamat: Jl. Garuda, Kemantran, Kecamatan Kramat, Tegal</li>
+                <li><img src="Telephone.png" alt="Telepon Icon" width="20"> Telepon: (0283) 1234567</li>
+                <li><img src="Email.jpg" alt="Email Icon" width="20"> Email: smk.muh.kramat@gmail.com</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p> SMK Muhammadiyah Kramat </p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Menghubungkan dengan JavaScript -->
+</body>
+</html>
